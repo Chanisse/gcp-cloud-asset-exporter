@@ -1,5 +1,11 @@
 # gcp-cloud-asset-exporter
-All-in-one repo to manage Cloud assets in GCP
+All-in-one repo to manage Cloud assets in GCP. Using this code, you can then visualise the data using Google Looker Studio
+
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Deploy IaC for GCP - Service account, IAM, PubSub Topic, Cloud scheduler](#deploy-iac-for-gcp---service-account-iam-pubsub-topic-cloud-scheduler)
+- [Deploy Cloud function](#deploy-cloud-function)
+- [View Looker Studio Dashboard](#view-looker-studio-dashboard)
 
 
 ## Prerequisites
@@ -65,3 +71,7 @@ gcloud beta functions deploy CLOUD_FUNCTION_NAME \
  --project GCP_PROJECT \
  --region REGION \
  --service-account SERVICE_ACCOUNT_EMAIL
+```
+
+## View Looker Studio Dashboard
+TO DO
