@@ -3,8 +3,8 @@ import datetime
 
 def export_assets_to_bigquery():
     # GCP variables - TO BE CHANGED
-    org_id = "1074395339543"
-    project_id = "c2m-tooling"
+    org_id = "CHANGEME"
+    project_id = "CHANGEME"
 
     # Initialisation
     bq_client = bigquery.Client()
