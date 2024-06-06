@@ -1,0 +1,11 @@
+project_id             = ""
+region                 = ""
+org_id                 = ""
+project_level_roles    = [""]
+org_level_roles        = [""]
+bq_dataset_level_roles = [""]
+bq_location            = ""
+service_account_name   = ""
+pubsub_topic_name      = ""
+cloud_scheduler_name   = ""
+cloud_scheduler_cron   = ""
