@@ -1,9 +1,9 @@
 project_id             = ""
 region                 = ""
 org_id                 = ""
-project_level_roles    = [""]
-org_level_roles        = [""]
-bq_dataset_level_roles = [""]
+project_level_roles    = ["roles/cloudfunctions.developer", "roles/pubsub.publisher", "roles/bigquery.user"]
+org_level_roles        = ["roles/cloudasset.viewer", "roles/resourcemanager.organizationViewer"]
+bq_dataset_level_roles = ["roles/bigquery.dataEditor"]
 bq_location            = ""
 service_account_name   = ""
 pubsub_topic_name      = ""
