@@ -1,5 +1,7 @@
 # gcp-cloud-asset-exporter
-All-in-one repo to manage Cloud assets in GCP. Using this code, you can then visualise the data using Google Looker Studio
+All-in-one repo to manage Cloud assets in GCP. Using this code, you can then visualise the data using Google's Looker Studio:
+
+![Looker Studio](./Looker-studio-dashboard.png)
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -74,4 +76,6 @@ gcloud beta functions deploy CLOUD_FUNCTION_NAME \
 ```
 
 ## View Looker Studio Dashboard
-TO DO
+Using Looker studio, you can select the dataset created and drill down in to all assets in GCP the organisation. 
+
+![Looker Studio Data Source](./Looker-studio-data-source.png)
