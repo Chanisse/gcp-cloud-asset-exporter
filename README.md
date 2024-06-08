@@ -1,5 +1,6 @@
 # gcp-cloud-asset-exporter
-All-in-one repo to manage Cloud assets in GCP. Using this code, you can then visualise the data using Google's Looker Studio:
+
+All-in-one repository to manage Cloud assets in Google Cloud Platform (GCP). This repository contains IaC (Terraform) for all GCP infrastructure and the Python code necessary for automating the export of cloud assets. Using this code, you can then visualize the data using Google's Looker Studio:
 
 ![Looker Studio](./Looker-studio-dashboard.png)
 
