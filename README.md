@@ -68,7 +68,7 @@ Run the gcloud command replacing:
 
 ```shell
 gcloud beta functions deploy CLOUD_FUNCTION_NAME \
- --runtime PYTHON_RUNTIME \
+ --runtime python311 \
  --trigger-topic PUBSUB_TOPIC_NAME \
  --entry-point pubsub_to_bigquery \
  --project GCP_PROJECT \
