@@ -46,7 +46,10 @@ def export_assets_to_bigquery():
         src_table = bigquery.TableReference.from_string(fully_qualified_table_id)
         dest_table = bigquery.TableReference.from_string(fully_qualified_latest_table_id)
         
-        job = bq_client.copy_table(src_table, dest_table)
+        # Configure the copy job to overwrite the destination table if it exists
+        copy_job_config = bigquery.CopyJobConfig(write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE)
+        
+        job = bq_client.copy_table(src_table, dest_table, job_config=copy_job_config)
         job.result()
         
         print(f"Successfully copied assets to BigQuery table: {fully_qualified_latest_table_id}")
