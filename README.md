@@ -22,10 +22,10 @@ Before you begin, ensure you have the following:
 - Sufficient IAM to deploy and make the following changes:
   - Org level IAM
   - Project level IAM
-  - Deploy Bigquery dataset
+  - Create a BigQuery dataset
   - Deploy Cloud scheduler
   - Deploy Cloud functions
-  - Deploy PubSub
+  - Deploy PubSub Topic
   - Create Service account
 
 
@@ -45,7 +45,8 @@ terraform init
 
 4. Plan and deploy Terraform
 ```shell
-terraform plan & terraform apply -auto-approve
+terraform plan 
+terraform apply -auto-approve
 ```
 
 ## Deploy Cloud function
