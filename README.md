@@ -2,7 +2,7 @@
 
 All-in-one repository to manage Cloud assets in Google Cloud Platform (GCP). This repository contains IaC (Terraform) for all GCP infrastructure and the Python code necessary for automating the export of cloud assets. Using this code, you can then visualize the data using Google's Looker Studio:
 
-![Looker Studio](./Looker-studio-dashboard.png)
+![Architecture](./Architecture.png)
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -69,6 +69,7 @@ Run the gcloud command replacing:
 ```shell
 gcloud beta functions deploy CLOUD_FUNCTION_NAME \
  --runtime python311 \
+ --runtime python311 \
  --trigger-topic PUBSUB_TOPIC_NAME \
  --entry-point pubsub_to_bigquery \
  --project GCP_PROJECT \
@@ -79,4 +80,4 @@ gcloud beta functions deploy CLOUD_FUNCTION_NAME \
 ## View Looker Studio Dashboard
 Using Looker studio, you can select the dataset created and drill down in to all assets in GCP the organisation. 
 
-![Looker Studio Data Source](./Looker-studio-data-source.png)
+![Looker Studio](./Looker-studio-dashboard.png)

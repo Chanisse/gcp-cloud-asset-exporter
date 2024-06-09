@@ -7,6 +7,7 @@ resource "google_service_account" "asset_export_sa" {
 
 # Asset Exporter BigQuery Dataset
 resource "google_bigquery_dataset" "cloud_asset_inventory" {
+  project                     = var.project_id
   dataset_id                  = "cloud_asset_inventory"
   friendly_name               = "Cloud Asset Inventory"
   description                 = "A dataset to store cloud asset inventory data"
