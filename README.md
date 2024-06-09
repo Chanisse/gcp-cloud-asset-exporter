@@ -31,35 +31,38 @@ Before you begin, ensure you have the following:
 
 ## Deploy IaC for GCP - Service account, IAM, PubSub Topic, Cloud scheduler
 
-From root, change into the terraform directory
+1. From root, change into the terraform directory
 ```shell
 cd infrastructure
 ```
+2. Update the .auto.tfvars file with your inputs
+[`asset-exporter.auto.tfvars`](infrastructure/asset-exporter.auto.tfvars)
 
-Initiliase Terraform
+3. Initiliase Terraform
 ```shell
 terraform init
 ```
 
-Plan and deploy Terraform
+4. Plan and deploy Terraform
 ```shell
 terraform plan & terraform apply -auto-approve
 ```
 
 ## Deploy Cloud function
 
-From root, change into the application directory
+1. From root, change into the application directory
 ```shell
 cd application
 ```
 
-Update variables on line 6 and line 7 in main.py
+2. Update the variables on line 6 and line 7 in main.py
 
 ```python
 6    org_id = "123456789"
 7    project_id = "example-prj"
 ```
-Run the gcloud command replacing:
+
+3. Run the gcloud command replacing:
 - CLOUD_FUNCTION_NAME
 - PUBSUB_TOPIC_NAME
 - GCP_PROJECT
